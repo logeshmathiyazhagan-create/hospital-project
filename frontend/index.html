@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CarePlus Hospital</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+
+        <div class="logo">
+            🏥 CarePlus Hospital
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#departments">Departments</a>
+            <a href="#doctors">Doctors</a>
+            <a href="#appointment">Appointment</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Home -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h1>Welcome to CarePlus Hospital</h1>
+
+            <p>
+                Quality healthcare with experienced doctors,
+                modern facilities and trusted patient care.
+            </p>
+
+            <a href="#appointment" class="btn">
+                Book Appointment
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Departments -->
+    <section id="departments">
+
+        <h2>Our Departments</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>❤️ Cardiology</h3>
+                <p>Advanced heart care and treatment.</p>
+            </div>
+
+            <div class="card">
+                <h3>🧠 Neurology</h3>
+                <p>Specialized treatment for neurological conditions.</p>
+            </div>
+
+            <div class="card">
+                <h3>🦴 Orthopedics</h3>
+                <p>Complete bone and joint care.</p>
+            </div>
+
+            <div class="card">
+                <h3>👶 Pediatrics</h3>
+                <p>Healthcare services for children.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Doctors -->
+    <section id="doctors">
+
+        <h2>Our Doctors</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Dr. Arun Kumar</h3>
+                <p>Cardiologist</p>
+            </div>
+
+            <div class="card">
+                <h3>Dr. Priya Sharma</h3>
+                <p>Neurologist</p>
+            </div>
+
+            <div class="card">
+                <h3>Dr. Rahul Raj</h3>
+                <p>Orthopedic Specialist</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Appointment -->
+    <section id="appointment">
+
+        <h2>Book Appointment</h2>
+
+        <form id="appointmentForm">
+
+            <!-- Patient Name -->
+            <input
+                type="text"
+                id="patientName"
+                placeholder="Patient Name"
+                required
+            >
+
+
+            <!-- Doctor Name -->
+            <input
+                type="text"
+                id="doctorName"
+                placeholder="Doctor Name"
+                required
+            >
+
+
+            <!-- Department -->
+            <select id="department" required>
+
+                <option value="">
+                    Select Department
+                </option>
+
+                <option value="Cardiology">
+                    Cardiology
+                </option>
+
+                <option value="Neurology">
+                    Neurology
+                </option>
+
+                <option value="Orthopedics">
+                    Orthopedics
+                </option>
+
+                <option value="Pediatrics">
+                    Pediatrics
+                </option>
+
+            </select>
+
+
+            <!-- Appointment Date -->
+            <input
+                type="date"
+                id="appointmentDate"
+                required
+            >
+
+
+            <!-- Appointment Time -->
+            <input
+                type="time"
+                id="appointmentTime"
+                required
+            >
+
+
+            <!-- Submit -->
+            <button type="submit" class="btn">
+                Book Appointment
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>📍 Chennai, Tamil Nadu</p>
+
+        <p>📞 +91 98765 43210</p>
+
+        <p>📧 info@careplus.com</p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 CarePlus Hospital
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

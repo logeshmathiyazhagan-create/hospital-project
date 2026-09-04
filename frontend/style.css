@@ -1,0 +1,215 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f9fc;
+    color: #333;
+}
+
+/* Header */
+
+header {
+    background: #087f8c;
+    color: white;
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 60px 8%;
+
+    background: #e8f8fa;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #075985;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Button */
+
+.btn {
+    display: inline-block;
+
+    background: #087f8c;
+    color: white;
+
+    padding: 13px 25px;
+
+    border: none;
+    border-radius: 6px;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+.btn:hover {
+    background: #065f6a;
+}
+
+/* Sections */
+
+section {
+    padding: 70px 8%;
+}
+
+section h2 {
+    text-align: center;
+    color: #075985;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+/* Cards */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    background: white;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    color: #087f8c;
+    margin-bottom: 15px;
+}
+
+/* Appointment */
+
+form {
+    max-width: 600px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0, 0, 0, 0.08);
+}
+
+form input,
+form select {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+form button {
+    width: 100%;
+}
+
+/* Contact */
+
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    margin: 10px;
+}
+
+/* Footer */
+
+footer {
+    background: #075985;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+        display: inline-block;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
